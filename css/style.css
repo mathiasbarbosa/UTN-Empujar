@@ -87,8 +87,20 @@ body{
 
 .card-img:hover{
     transform: scale(1.1);
-    transition: all .3s ;
+    transition: all .3s  ease-in-out;
 }
+/* 
+@keyframes animacion {
+    0%{
+        background-color: black;
+    }
+    10%{
+        background-color: red;
+    }
+    100%{
+        background-color: violet;
+    }
+} */
 
 
 .container-cards div:first-child {
@@ -97,8 +109,11 @@ body{
 
 .card {
     text-align: center;
+    /* animation-name:animacion ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ */
 }
-
 
 .card-title{
     margin-top: 10px;
