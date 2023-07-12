@@ -1,0 +1,19 @@
+body {
+  background-color: red;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+}
+header nav {
+  border: 1px solid forestgreen;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

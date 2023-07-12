@@ -1,0 +1,23 @@
+body{
+    background-color: red;
+}
+
+$color-1: red;
+$font-1: 1rem;
+
+header{
+    width: 100%;
+    padding: 1rem;
+    nav{
+        border: 1px solid forestgreen;
+        ul{
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
