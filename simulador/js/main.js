@@ -114,5 +114,12 @@ while (option != '3') {
     option = prompt("Bienvenido al home banking, que desea hacer? \n 1-iniciar sesion \n 2-registrate \n 3- salir")
 }
 
-// Leer datos de un usuario.
-// depositar en la cuenta.
+// **Leer datos de un usuario.
+// **depositar en la cuenta.
+
+
+// ! 3. Consulta de movimientos: Permitir a los usuarios ver los movimientos de su cuenta, como transacciones, depósitos, retiros, pagos, etc.
+// !4. Transferencias: Permitir a los usuarios realizar transferencias de dinero entre sus cuentas o a cuentas de terceros.
+// !5. Pagos de servicios: Permitir a los usuarios pagar servicios como facturas de luz, agua, teléfono, etc.
+
+

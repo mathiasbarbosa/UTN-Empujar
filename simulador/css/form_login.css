@@ -1,0 +1,68 @@
+:root{
+    --color_1: #110934;
+    --color_2: #B2D732;
+    --color_3: #FC600A;
+}
+
+*{
+    color: var(--color_2);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color_1);
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+h1{
+    font-size: 3rem;
+}
+
+.container_form{
+    width: 40%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+form > input {
+    padding: 0.3rem;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color_2);
+}
+
+form > button {
+    padding: 0.5rem;
+    width: 60%;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid var(--color_2) ;
+    cursor: pointer;
+}
+
+form > button:hover{
+    background-color: var(--color_2);
+    border: none;
+    color: #110934;
+}
