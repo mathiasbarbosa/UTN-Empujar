@@ -1,0 +1,6 @@
+.card{
+    width: 60%;
+    display: flex;
+    gap: 2rem;
+    box-shadow: 5px 5px 5px #22222287;
+}
