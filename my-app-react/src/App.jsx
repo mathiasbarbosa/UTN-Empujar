@@ -8,6 +8,9 @@ import EjemploUseState from './EjemplouseState'
 import EjemploUseEffect from './ejemploUseEffect'
 import { useState } from 'react'
 import { sculptureList } from './data' // array de objetos 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Productos from './components/Productos'
+import Home from './components/Home'
 
 function App() {
   
@@ -49,8 +52,10 @@ function App() {
   let obra = sculptureList[index]
   
   return (
+    <Router>
     <>
-    
+      <Link to='/' >Home</Link>
+      <Link to='/productos' >productos</Link>
       {/* <h1>Top de artistas musicales</h1>
       <Saludo name={'Pablo Picasso'} nacionalidad={'Español'} estilo={'Cubismo'} img={imgPicasso}/> 
       {/* <Saludo name={'Vincent van Gogh'} nacionalidad={'Holandés'} estilo={'Postimpresionismo'} img={imgVangogh}/>  */}
@@ -58,13 +63,18 @@ function App() {
       {/* <EjemploUseState /> */}
 
       {/* <EjemploUseEffect /> */}
-      <button onClick={handleNext}>Siguiente</button>
+      {/* <button onClick={handleNext}>Siguiente</button>
       <h2>{obra.name}</h2>
       <button onClick={handleShowMore}> {showMore === true ? 'ocultar info' : 'mostrar mas'}</button>
       {showMore === true ? <p>{obra.description}</p> : '' }
-      <img src={obra.url} alt='' />
+      <img src={obra.url} alt='' /> */}
 
     </>
+      <Routes>
+        <Route path='/' element={<Home />} />  
+        <Route path='/productos' element={<Productos />} />  
+      </Routes>
+    </Router>
   )
 }
 

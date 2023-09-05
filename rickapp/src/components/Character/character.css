@@ -1,0 +1,32 @@
+
+.card{
+    display: flex;
+    gap: 2rem;
+    width: 30%;
+    height: 250px;
+    border-radius: 3%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #2222223b;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: aliceblue;
+}
+
+.card_img{
+    display: flex;
+}
+
+.card_img > img{
+    width:100% ;
+}
+
+.card_data{
+    width: 45%;
+}
+
+@media (max-width: 800px){
+.card{
+    width: 80%;
+}}
