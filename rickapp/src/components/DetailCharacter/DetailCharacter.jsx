@@ -21,6 +21,7 @@ const DetailCharacter = () => {
             .then((data) => setCharacter(data))
             .catch(err => console.error(err))
     }, [])
+    
     return (
         <>
         {character ? <Character {...character} />

@@ -5,10 +5,10 @@ import Pagination from '../Pagination/Pagination';
 import '../../app.css'
 
 
-const Home = () => {
+const Home = ({user, setUser}) => {
 
     const [personajes, setPersonajes] = useState()
-    const [index, setIndex] = useState(4)
+    const [index, setIndex] = useState(1)
     console.log(personajes);
 
     useEffect(() => {
@@ -25,12 +25,19 @@ const Home = () => {
     const handleNext = () => {
         setIndex(prevValue => prevValue + 1)
     }
+
+    const addFavorite = (id) => {
+        const findPersonaje = personajes.find( personaje => personaje.id == id)
+        console.log(findPersonaje);
+        setUser({...user, favoritos:[...user.favoritos, findPersonaje]}) 
+    }
+
     return (
         <>
             <main>
                 {
                     personajes ?
-                        personajes.map((personaje) => <Character key={personaje.id} {...personaje} />)
+                        personajes.map((personaje) => <Character key={personaje.id} {...personaje} user={user} addFavorite={addFavorite} />)
                         : <p>Cargando...</p>
                 }
 

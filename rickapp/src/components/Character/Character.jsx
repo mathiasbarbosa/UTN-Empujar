@@ -2,7 +2,7 @@ import React from 'react';
 import './character.css'
 import { Link } from 'react-router-dom';
 
-const Character = ({image, name, species, type, gender, status, id}) => {
+const Character = ({image, name, species, type, gender, status, id, user, addFavorite}) => {
     // const {image, name, species, type, gender, status} = personaje
     
     return (
@@ -16,6 +16,9 @@ const Character = ({image, name, species, type, gender, status, id}) => {
                 <h4>{type}</h4>
                 <span> {gender} </span>
                 <p>{status}</p>
+                <button  disabled={user ? false : true} style={{backgroundColor:'transparent',border:'none' ,marginRight: '1rem'}}>
+                    <i id={id} onClick={(e) => addFavorite(e.target.id)} style={{fontSize: '1.5rem', cursor:'pointer'} } className="bi bi-heart"></i>     
+                </button>
                 <Link to={`detailcharacter/${id}`} >Ver mas</Link>
             </div>
         </div>
