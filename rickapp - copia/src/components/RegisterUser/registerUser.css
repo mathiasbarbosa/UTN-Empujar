@@ -1,0 +1,29 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 15px auto;
+    padding: 2rem;
+    gap: 1rem;
+    box-shadow: 5px 5px 5px #2222223b;
+
+}
+
+form > label {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label > input {
+    padding: 0.7rem;
+    border: none;
+    border-top: 1px solid ;
+    outline: none;
+}
+
+form > label > input button{
+    width: 50%;
+    margin: auto;
+    padding: 0.7rem;
+    cursor: pointer;
+}
