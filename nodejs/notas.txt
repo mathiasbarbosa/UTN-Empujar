@@ -1,0 +1,1 @@
+Estamos leyendo el archivo notas.txt con el modulo fs de node JS

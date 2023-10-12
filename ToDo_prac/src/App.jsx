@@ -1,7 +1,6 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 import './App.css'
-
 
 const Form = ({addTask}) => {
   const [newTask, setNewTask] = useState()
@@ -93,6 +92,7 @@ function App() {
   const completeTask = (e) => {
     let id = e.target.id
     id = id.slice(7)
+    // useRef
     let updateTasks = tasks.map(task => {
         if (task.id == id) {
             return {...task, state: !task.state}
