@@ -1,0 +1,13 @@
+<section>
+  <div class="detail">
+    <h2><%= movie.Title %></h2>
+    <h3>Released:<%= movie.Released %> Runtime:<%= movie.Runtime %> </h3>
+    <h4>Genre:<%= movie.Genre %> Director:<%= movie.Director %> </h4>
+    <img src="<%= movie.Images[0] %>" alt="">
+    <div>
+      <h4><%= movie.Actors %></h4>
+      <p><%= movie.Plot %></p>
+    </div>
+    <a href="http://localhost:3000/api/movies">Volver al home</a>
+  </div>
+</section>

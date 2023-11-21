@@ -1,0 +1,23 @@
+main{
+  width: 100%;
+}
+.containerMovies{
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+
+}
+
+.card{
+  padding: 1rem;
+  border: 1px solid;
+}
+
+.card > img{
+  width: 100%;
+  /* min-width: 300px; */
+  object-fit: cover;
+  height: 300px;
+}

@@ -1,0 +1,12 @@
+<section class="containerMovies">
+  <% movies.forEach(function(movie){ %>
+    <div class="card">
+      <h2><%= movie.Title %></h2>
+      <h3><%= movie.Year %></h3>
+      <h4><%= movie.Released %></h4>
+      <p><%= movie.Genre %></p>
+      <img src="<%= movie.Images[0] %>" alt="">
+      <a href="http://localhost:3000/api/movies/<%= movie.imdbID %>">Ver mas</a>
+    </div>
+  <% }); %>
+</section>

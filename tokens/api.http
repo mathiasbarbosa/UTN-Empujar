@@ -1,0 +1,12 @@
+###
+POST http://localhost:3000/login 
+content-type: application/json
+
+{
+  "username": "Lucas",
+  "password": "esta_es-mi_pass"
+}
+
+### 
+GET http://localhost:3000/rutaprotegida
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikx1Y2FzIiwiaWF0IjoxNjk4NjE0NjA0LCJleHAiOjE2OTg2MTgyMDR9.D6ELPGB4-DctnsIV9I2XKldWSQbynnBufYcPq6fNE0k

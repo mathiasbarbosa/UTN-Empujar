@@ -1,0 +1,18 @@
+### 
+GET http://localhost:3000/movies
+
+
+###  get por id
+GET http://localhost:3000/movies/tt0848228
+
+### 
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "Tittle": "Breaking bad",
+    "Year": 2008,
+    "imdbID": "tt0499590",
+    "Type": "movie",
+    "Poster": "http://localhost"
+}

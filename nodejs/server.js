@@ -21,3 +21,6 @@ const server = http.createServer((request, response) => {
 server.listen(port, hostname, () => {
   console.log(`Servvidor corriendo en http://${hostname}:${port}`)
 })
+
+
+// TODO CORS policy: No 'Access-Control-Allow-Origin'

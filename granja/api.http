@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/granjas
+
+###
+GET http://localhost:3001/api/granjas?nombre=Tomate
+
+###
+POST http://localhost:3001/api/granjas
+Content-Type: application/json
+
+{
+  "nombre": "Frutilla",
+  "precio": 70.50,
+  "categoria_id": 1
+}
+
+###
+PUT http://localhost:3001/api/granjas/8
+Content-Type: application/json
+
+{
+  "precio": 30.50
+}
