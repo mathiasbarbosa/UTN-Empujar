@@ -1,7 +1,10 @@
 GET http://localhost:3001/api/granjas
 
 ###
-GET http://localhost:3001/api/granjas?nombre=Tomate
+GET http://localhost:3001/api/granjas?nombre=Naranja
+
+###
+GET http://localhost:3001/api/granjas?categoria=Verdura
 
 ###
 POST http://localhost:3001/api/granjas
